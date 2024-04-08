@@ -12,7 +12,7 @@ endif
 ifeq ($(UNAME),Linux)
 LDFLAGS += -lCg -lpthread
 endif
-LDFLAGS += $(NVIDIA)/lib/cg.lib -lpthread
+LDFLAGS += cg.lib -lpthread
 
 CC = $(PREFIX)gcc
 STRIP = $(PREFIX)strip
